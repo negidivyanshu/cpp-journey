@@ -9,7 +9,7 @@
 //     cout<<"Simple interest on 5000rs at 5% for 2yr will be: "<<si<<endl;
 // }
 
-// //calculating Area of a circle
+//calculating Area of a circle
 // #include <iostream>
 // using namespace std;
 // int main(){
@@ -17,3 +17,13 @@
 //     float area = 3.14*x*x; //pie*r*r
 //     cout<<area<<endl;
 // }
+
+    // int x;
+    // cout<<"enter first number: "<<endl;
+    // cin>>x;
+    // cout<<"enter second number: "<<endl;
+    // int y;
+    // cin>>y;
+    // cout<<x+y<<endl;
+
+
