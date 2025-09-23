@@ -1,7 +1,7 @@
 // //Calculating Simple Interest
-// #include <iostream>
-// using namespace std;
-// int main(){
+#include <iostream>
+using namespace std;
+int main(){
 //     float p = 5000; //principle amount
 //     float t = 2; //time
 //     float r = 5; //rate
@@ -26,4 +26,17 @@
     // cin>>y;
     // cout<<x+y<<endl;
 
+//Typecasting
 
+//Q- take an integer input and return half of its value
+
+    // int main(){
+    //     int x;
+    //     cin>>x;
+    //     float y = (float)x; //Typecasting is the process of converting a variable from one data type to another.
+    //     cout<<y/2;
+    // }
+
+ //Heirarchy of operations
+ 
+}
