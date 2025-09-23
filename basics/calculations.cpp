@@ -38,5 +38,19 @@ int main(){
     // }
 
  //Heirarchy of operations
- 
-}
+ //cpp uses the BODMAS method for calculations
+ //in BODMAS the division and multiplications hold the same presidence so the answer from either ways is correct
+ //However in C++ in case of confliction of both divi and multi the equation goes from left to right in the below case multi first 
+//  int i = 2 * 3 / 4;
+//  cout<<i; 
+// }
+
+
+// Char datatype
+//  char x;
+//  cin>>x;
+//  cout<<x<<endl;
+// }
+
+//ASCII values, each character has a specific interger value like a = 97, b = 98, c = 99...
+
