@@ -10,9 +10,13 @@ using namespace std;
 
 
 int main(){
-  int n;
-  cout<<"Enter an integer :";
-  cin>>n;
-  if(n>0) cout<<n;
-  else cout<<-n;
+  int cp;
+  cout<<"Enter Cost price :";
+  cin>>cp;
+  int sp;
+  cout<<"Enter Selling price :";
+  cin>>sp;
+  if(sp<cp) cout<<"Loss of "<<cp-sp;
+  else if (sp>cp) cout<<"Profit of "<<sp-cp;
+  else (sp==cp) cout<<"Neither profit nor loss";
 }
