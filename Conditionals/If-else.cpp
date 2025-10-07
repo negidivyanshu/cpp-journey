@@ -8,15 +8,13 @@ using namespace std;
 //   else cout<<n<<" is an odd number";
 // }
 
-
+// 3 digit or not
 int main(){
-  int cp;
-  cout<<"Enter Cost price :";
-  cin>>cp;
-  int sp;
-  cout<<"Enter Selling price :";
-  cin>>sp;
-  if(sp<cp) cout<<"Loss of "<<cp-sp;
-  else if (sp>cp) cout<<"Profit of "<<sp-cp;
-  else (sp==cp) cout<<"Neither profit nor loss";
+  int n;
+  cout<<"Enter a number :";
+  cin>>n;
+  if(n>99 && n<1000) { 
+    cout<<n<<" is a 3 digit number";
+  }
+  else cout<<n<<" is not a 3 digit number";
 }

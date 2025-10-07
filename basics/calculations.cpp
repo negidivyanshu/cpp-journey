@@ -1,56 +1,84 @@
-// //Calculating Simple Interest
+// ============================================
+// 📘 C++ Basics Practice
+// Author: Divyanshu Negi
+// Description: Basic C++ programs demonstrating
+//              simple interest, area, typecasting,
+//              operator hierarchy, and char datatype.
+// ============================================
+
 #include <iostream>
 using namespace std;
-int main(){
-//     float p = 5000; //principle amount
-//     float t = 2; //time
-//     float r = 5; //rate
-//     float si = (p*r*t)/100; //formula for SI 
-//     cout<<"Simple interest on 5000rs at 5% for 2yr will be: "<<si<<endl;
-// }
 
-//calculating Area of a circle
-// #include <iostream>
-// using namespace std;
-// int main(){
-//     float x = 4.3; //radius of a circle
-//     float area = 3.14*x*x; //pie*r*r
-//     cout<<area<<endl;
-// }
+int main() {
+    // --------------------------------------------
+    // 🧮 1. Calculating Simple Interest
+    // Formula: (P × R × T) / 100
+    // --------------------------------------------
+    float p = 5000; // Principal amount (in Rs)
+    float t = 2;    // Time (in years)
+    float r = 5;    // Rate of interest (in %)
+    float si = (p * r * t) / 100;
+    cout << "Simple Interest on Rs " << p
+         << " at " << r << "% for " << t
+         << " years = Rs " << si << endl;
 
-    // int x;
-    // cout<<"enter first number: "<<endl;
-    // cin>>x;
-    // cout<<"enter second number: "<<endl;
-    // int y;
-    // cin>>y;
-    // cout<<x+y<<endl;
+    cout << "------------------------------------------" << endl;
 
-//Typecasting
+    // --------------------------------------------
+    // ⚪ 2. Area of a Circle
+    // Formula: π × r²
+    // --------------------------------------------
+    float radius = 4.3;
+    float area = 3.14 * radius * radius;
+    cout << "Area of circle with radius " << radius
+         << " = " << area << endl;
 
-//Q- take an integer input and return half of its value
+    cout << "------------------------------------------" << endl;
 
-    // int main(){
-    //     int x;
-    //     cin>>x;
-    //     float y = (float)x; //Typecasting is the process of converting a variable from one data type to another.
-    //     cout<<y/2;
-    // }
+    // --------------------------------------------
+    // ➕ 3. Adding Two Numbers (User Input)
+    // --------------------------------------------
+    int x, y;
+    cout << "Enter first number: ";
+    cin >> x;
+    cout << "Enter second number: ";
+    cin >> y;
+    cout << "Sum = " << x + y << endl;
 
- //Heirarchy of operations
- //cpp uses the BODMAS method for calculations
- //in BODMAS the division and multiplications hold the same presidence so the answer from either ways is correct
- //However in C++ in case of confliction of both divi and multi the equation goes from left to right in the below case multi first 
-//  int i = 2 * 3 / 4;
-//  cout<<i; 
-// }
+    cout << "------------------------------------------" << endl;
 
+    // --------------------------------------------
+    // 🔄 4. Typecasting Example
+    // Input: Integer → Output: Half of its value (float)
+    // --------------------------------------------
+    int num;
+    cout << "Enter an integer: ";
+    cin >> num;
+    float half = static_cast<float>(num) / 2;
+    cout << "Half of " << num << " = " << half << endl;
 
-// Char datatype
-//  char x;
-//  cin>>x;
-//  cout<<x<<endl;
-// }
+    cout << "------------------------------------------" << endl;
 
-//ASCII values, each character has a specific interger value like a = 97, b = 98, c = 99...
+    // --------------------------------------------
+    // 🧠 5. Operator Hierarchy Example
+    // C++ follows BODMAS; in case of equal precedence
+    // (e.g., * and /), evaluation happens left to right.
+    // --------------------------------------------
+    int result = 2 * 3 / 4; // Evaluates (2*3)=6, then 6/4=1
+    cout << "Result of (2 * 3 / 4) = " << result << endl;
 
+    cout << "------------------------------------------" << endl;
+
+    // --------------------------------------------
+    // 🔤 6. Character Input & ASCII Value
+    // --------------------------------------------
+    char ch;
+    cout << "Enter a character: ";
+    cin >> ch;
+    cout << "You entered: " << ch
+         << " | ASCII value: " << int(ch) << endl;
+
+    cout << "------------------------------------------" << endl;
+
+    return 0;
+}
