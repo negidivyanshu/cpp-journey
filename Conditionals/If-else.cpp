@@ -58,3 +58,46 @@ int main() {
 
     return 0;
 }
+
+
+
+// Decision Making in C++: Ternary Operator & Switch Case
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    // -------------------------------
+    // 1️⃣  TERNARY OPERATOR EXAMPLE
+    // -------------------------------
+    // The ternary operator is a shorthand way of writing if-else statements.
+    // Syntax: (condition) ? expression_if_true : expression_if_false;
+
+    int a;
+    cout << "Enter a number: ";
+    cin >> a;
+
+    (a % 2 == 0) ? cout << a << " is even\n" : cout << a << " is odd\n";
+
+    // -------------------------------
+    // 2️⃣  SWITCH CASE EXAMPLE
+    // -------------------------------
+    // The switch statement checks a variable against multiple constant values.
+
+    int day;
+    cout << "\nEnter a number (1-7) for day of the week: ";
+    cin >> day;
+
+    switch (day) {
+        case 1: cout << "Monday\n"; break;
+        case 2: cout << "Tuesday\n"; break;
+        case 3: cout << "Wednesday\n"; break;
+        case 4: cout << "Thursday\n"; break;
+        case 5: cout << "Friday\n"; break;
+        case 6: cout << "Saturday\n"; break;
+        case 7: cout << "Sunday\n"; break;
+        default: cout << "Invalid day number!\n"; break;
+    }
+
+    return 0;
+}
